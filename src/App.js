@@ -2,18 +2,21 @@ import './App.css';
 
 
 function App() {
+  // BUG: KEY MUST BE SHIFTED DOWN
   const main = [
-    'https://ia800106.us.archive.org/13/items/24-piano-keys/key01.mp3',
     'https://ia800106.us.archive.org/13/items/24-piano-keys/key03.mp3',
     'https://ia800106.us.archive.org/13/items/24-piano-keys/key05.mp3',
+
     'https://ia800106.us.archive.org/13/items/24-piano-keys/key07.mp3',
     'https://ia800106.us.archive.org/13/items/24-piano-keys/key08.mp3',
-    'https://ia600106.us.archive.org/13/items/24-piano-keys/key10.mp3',
+    'https://ia800106.us.archive.org/13/items/24-piano-keys/key10.mp3',
+
     'https://ia800106.us.archive.org/13/items/24-piano-keys/key12.mp3',
   ]
   const b = [
     'https://ia800106.us.archive.org/13/items/24-piano-keys/key02.mp3',
     'https://ia800106.us.archive.org/13/items/24-piano-keys/key04.mp3',
+
     'https://ia800106.us.archive.org/13/items/24-piano-keys/key06.mp3',
     'https://ia800106.us.archive.org/13/items/24-piano-keys/key09.mp3',
     'https://ia800106.us.archive.org/13/items/24-piano-keys/key11.mp3',
@@ -28,6 +31,7 @@ function App() {
     // console.log(e.keyCode)
     // pretty weak logic, but meh, who cares
     playAudio(main[e.keyCode-49])
+    console.log(e.keyCode)
   }
 
   return (
